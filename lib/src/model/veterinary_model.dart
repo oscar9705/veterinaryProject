@@ -4,7 +4,6 @@ class Veterinary {
   String nit;
   String email;
   bool state;
-
   Veterinary({
     this.id,
     this.name,
@@ -13,7 +12,7 @@ class Veterinary {
     this.state,
   });
 
-  factory Veterinary.fromJsonMap(Map<String, dynamic> json) {
+  factory Veterinary.fromJson(Map<String, dynamic> json) {
     return new Veterinary(
       id: json['idVet'],
       name: json['nameVet'],
